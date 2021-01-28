@@ -1,0 +1,15 @@
+.button{
+    padding:14px;
+    border: none;
+    background:transparent;
+    color:rgb(100, 96, 96);
+    font-weight:600;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.button:hover{
+    background:rgb(224, 222, 222);
+    border-radius:10px;
+}

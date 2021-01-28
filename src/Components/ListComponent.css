@@ -1,0 +1,13 @@
+.list__item{
+    margin-top:0;
+    padding:10px;
+}
+a{
+    color:rgba(45, 45, 189, 0.918);
+    cursor: pointer;
+    font-size:12px;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline rgba(45, 45, 189, 0.918);
+}
