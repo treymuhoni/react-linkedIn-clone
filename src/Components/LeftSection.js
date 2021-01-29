@@ -1,36 +1,34 @@
 import React from 'react'
-import './Content.css'
+import './LeftSection.css'
 import ListComponent from './ListComponent'
-import MiddleSection from './MiddleSection'
-import RightSection from './RightSection'
+import {useStateValue} from "./StateProvider"
 
-function Content() {
+function LeftSection() {
+    const [{ user },dispatch] = useStateValue()
     return (
-        <div className='content'>
-            <div className='left__section'>      
+        <div className='left__section'>      
                 <div className='left__section__top'>
                     <div className='left__section__top__top'>
                         <img className='avatar' 
-                            src='./bg.jpg'
-                            alt=''>
+                            src={user.photoURL}
+                            alt='user image'>
                         </img>
-                        <h4 className='user__name'>Trevor Muhoni</h4>
+                        <h4 className='user__name'>{user.displayName}</h4>
                         <p className='user__description'>Web developer at freelance.com</p>
                     </div>
                     <div className='left__section__top__bottom'>
                         <div className='connections'>
-                            <p>Connections</p>
-                            <span>39</span> 
+                            <p>Connections <span>39</span></p>
+                            <h6>Grow your connections</h6>
                         </div>
                         <div className='viewers'>
-                            <p>Who viewed your profile</p>
-                            <span>9</span>
+                            <p>Profile Viewers <span>9</span></p>                      
                         </div>
                         <div className='access'>
                             <p>Access exclusive tools and insights</p>
-                            <h4>Try premium free for 1 month</h4>
+                            <h6>Try premium free for 1 month</h6>
                         </div> 
-                        <p className='items'>My Items</p>             
+                        <h6 className='items'>My Items</h6>             
                     </div>                 
                 </div>
                 <div className='left__section__bottom'>
@@ -41,18 +39,7 @@ function Content() {
                     </div>
                 </div>
             </div>
-            
-            <div className='middle__section'>
-                <MiddleSection />
-            </div>
-            <div className='right__section'>
-                <RightSection />
-                <h1>right section</h1>
-            </div>
-            
-        </div>
     )
 }
 
-export default Content
-
+export default LeftSection

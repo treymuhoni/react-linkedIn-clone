@@ -6,48 +6,62 @@ import SmsIcon from '@material-ui/icons/Sms';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import WorkIcon from '@material-ui/icons/Work';
 import Avatar from '@material-ui/core/Avatar';
+import {useStateValue} from "./StateProvider"
+import AppsIcon from '@material-ui/icons/Apps';
+
 
 function Navbar() {
   const [searchText,setSearchText] = useState('')
+  const [{ user }, dispatch] = useStateValue()
+
   return (
     <div className='navbar'>
       <div className='nav__left'>
-        <img className='nav__avatar' src='./logo1.png' alt='image__logo'></img>
+        <img className='nav__avatar' src='./logo.webp' alt='image__logo'></img>
         <form>
           <input className='search__input' 
           type='text' 
           value={searchText} 
           placeholder='Search'
           onChange={(e) => setSearchText(e.target.value)}></input>
-         {/* <button onClick={handleSubmit}>s</button>*/}
         </form>      
       </div>
 
       <div className='nav__right'>
         <div className='nav__link'>
-          <HomeIcon color='disabled' className='nav__icon'></HomeIcon>
-          <p>Home</p>
+          <HomeIcon className='nav__icon'></HomeIcon>
+          <p>home</p>
         </div>
         <div className='nav__link'>
-          <LanguageIcon color='disabled' className='nav__icon'></LanguageIcon>
-          <p>My network</p>
+          <LanguageIcon className='nav__icon'></LanguageIcon>
+          <p>Network</p>
         </div>
         <div className='nav__link'>
-          <WorkIcon color='disabled' className='nav__icon'></WorkIcon>
+          <WorkIcon className='nav__icon'></WorkIcon>
           <p>Jobs</p>
+          
         </div>
         <div className='nav__link'>
-          <SmsIcon color='disabled' className='nav__icon'></SmsIcon>
-          <p>Messaging</p>
+          <SmsIcon className='nav__icon'></SmsIcon>
+          <p>Messages</p>       
         </div>
         <div color='disabled' className='nav__link'>
-          <NotificationsIcon color='disabled' className='nav__icon'></NotificationsIcon>
+          <NotificationsIcon className='nav__icon'></NotificationsIcon>
           <p>Notifications</p>
         </div>
         <div className='nav__link'>
-          <Avatar src='./bg.jpg' />
+          {/*<Avatar src={user.photoUrl} />*/}
+          <LanguageIcon className='nav__icon'></LanguageIcon>
           <p>Me</p>
         </div>
+      </div>
+
+      <div className="nav__right__right">
+        <div className='nav__link'>
+          <AppsIcon className='nav__icon'></AppsIcon>
+          <p>More</p>       
+        </div>
+        <p className="access__text">Try premium free for 1 month</p>
       </div>
     </div>
   )

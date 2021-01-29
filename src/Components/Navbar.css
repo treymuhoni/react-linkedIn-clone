@@ -8,13 +8,13 @@
     z-index: 100;
 }
 .nav__avatar{
-    widows: 40px;
+    width: 40px;
     height:40px;
     margin-bottom: 5px;
 }
 .nav__icon{
-    widows: 25px;
-    height:25px;
+    width: 40px;
+    height:40px;
     margin-bottom: 5px;
 }
 .nav__left{
@@ -41,10 +41,22 @@
     color:rgb(31, 30, 30);
 }
 .nav__link{
-    margin:0 12px;
+    margin-right:18px;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    margin-top:0;
+    margin-bottom: 0;
+    margin-left:20px;
+}
+.nav__right__right{ 
+    display: flex;
+    cursor:pointer;
+}
+.access__text{
+    margin:0 18px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }

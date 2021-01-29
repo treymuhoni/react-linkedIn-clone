@@ -6,10 +6,15 @@
  box-sizing: border-box; 
 }
 body{
-  font-family: sans-serif;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
+  overflow-x: hidden;
 }
 .app__container{
   background:rgb(238, 236, 236);
   padding-left:10px;
+}
+.body__content{
+  display: flex;
+  padding:45px 100px;
 }
 

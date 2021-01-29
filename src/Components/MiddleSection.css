@@ -1,13 +1,13 @@
 .middle__section{
     align-items: center;
     text-align: center;
-    flex:1;
+    width:550px;
     margin-left: 2px;
 }
 .middle__top{
     background:#fff;
-    width:90%;
-    height:120px;
+    width:100%;
+    min-height:120px;
     border-radius: 10px;
     padding:5px 10px;
     border:1px solid rgb(207, 205, 205);
@@ -21,7 +21,9 @@
     width:100%;
     padding:14px;
     border-radius:9999px;
+    display: block;
     outline:none;
+    margin-bottom:3px;
     border:1px solid rgb(218, 215, 215);
 }
 .input__field:hover{
@@ -32,4 +34,7 @@
     widows: 100%;
     padding:5px 30px;
     justify-content: space-between;
+}
+.middle__bottom{
+    width:100%;
 }

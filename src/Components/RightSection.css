@@ -1,6 +1,42 @@
 .right__section{
-    width:280px;  
-    background:#fff;
-    height:100vh;
+    background:rgb(238, 236, 236);
     border-radius: 10px;
+    width:315px;
+    margin-left:20px;
+    border:1px solid rgb(235, 233, 233);
+    /*padding:10px 12px;*/
+    height:110vh;
+}
+.right__section__heading{
+    margin-bottom: 22px;
+    font-weight:100;
+    font-size:18px;
+}
+.right__section__top{
+    padding:10px 12px;
+    margin-bottom: 5px;
+    border:1px solid rgb(211, 209, 209);
+    width: 100%;
+    border-radius: 10px;
+    background:#fff;
+}
+.right__section__bottom{
+    background:#fff;
+
+    padding:10px 12px;
+    margin-top: 0px;
+    border:1px solid rgb(211, 209, 209);
+    width: 100%;
+    border-radius: 10px;
+}
+.bottom__text{
+    margin-bottom: 6px;
+    padding:12px 0;
+}
+.bottom__text:hover{
+    background:rgb(218, 215, 215);
+
+}
+.bottom__text h6{
+    margin-bottom: 6px;
 }
